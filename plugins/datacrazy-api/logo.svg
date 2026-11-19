@@ -1,15 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="datacrazy-api">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4E5BF2"/>
-      <stop offset="1" stop-color="#7C5CFF"/>
-    </linearGradient>
+    <radialGradient id="g" cx="0.42" cy="0.42" r="0.75">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#3A1FD0"/>
+    </radialGradient>
   </defs>
   <rect width="256" height="256" rx="56" fill="url(#g)"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M92 60 C74 60 72 70 72 86 V108 C72 120 66 128 54 128 C66 128 72 136 72 148 V170 C72 186 74 196 92 196"/>
-    <path d="M164 60 C182 60 184 70 184 86 V108 C184 120 190 128 202 128 C190 128 184 136 184 148 V170 C184 186 182 196 164 196"/>
-    <path d="M104 110 H150 M138 98 L150 110 L138 122"/>
-    <path d="M152 146 H106 M118 134 L106 146 L118 158"/>
-  </g>
+  <path d="M70 70 L180 79 L178 86 L83 118 L83 125 L172 138 L107 169" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linejoin="round"/>
+  <circle cx="192" cy="192" r="50" fill="#FFFFFF" stroke="#3A1FD0" stroke-width="5"/>
+  <g transform="translate(192 192) scale(1.4)" fill="none" stroke="#4E3BE6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-9 -17 C-15 -17 -16 -14 -16 -9 V-4 C-16 -1 -18 0 -21 0 C-18 0 -16 1 -16 4 V9 C-16 14 -15 17 -9 17"/><path d="M9 -17 C15 -17 16 -14 16 -9 V-4 C16 -1 18 0 21 0 C18 0 16 1 16 4 V9 C16 14 15 17 9 17"/><path d="M-6 -5 H6 M2 -9 L6 -5 L2 -1 M6 5 H-6 M-2 1 L-6 5 L-2 9"/></g>
 </svg>

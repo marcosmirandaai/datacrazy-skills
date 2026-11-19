@@ -1,6 +1,6 @@
 {
   "name": "datacrazy-automacoes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Construir, revisar e depurar automações (fluxos) do CRM Datacrazy, com validador de JSON e organizador de layout.",
   "author": {
     "name": "Marcos Miranda"

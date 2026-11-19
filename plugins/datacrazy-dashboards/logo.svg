@@ -1,16 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="datacrazy-dashboards">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4E5BF2"/>
-      <stop offset="1" stop-color="#7C5CFF"/>
-    </linearGradient>
+    <radialGradient id="g" cx="0.42" cy="0.42" r="0.75">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#3A1FD0"/>
+    </radialGradient>
   </defs>
   <rect width="256" height="256" rx="56" fill="url(#g)"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M58 198 H198"/>
-    <rect x="66" y="142" width="30" height="36" rx="7"/>
-    <rect x="113" y="110" width="30" height="68" rx="7"/>
-    <rect x="160" y="96" width="30" height="82" rx="7"/>
-    <path d="M70 104 L116 66 L144 80 L190 42 M168 42 H190 V64"/>
-  </g>
+  <path d="M70 70 L180 79 L178 86 L83 118 L83 125 L172 138 L107 169" fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linejoin="round"/>
+  <circle cx="192" cy="192" r="50" fill="#FFFFFF" stroke="#3A1FD0" stroke-width="5"/>
+  <g transform="translate(192 192) scale(1.4)" fill="none" stroke="#4E3BE6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-19 17 H19"/><rect x="-16" y="3" width="8" height="9" rx="2"/><rect x="-4" y="-5" width="8" height="17" rx="2"/><rect x="8" y="-13" width="8" height="25" rx="2"/></g>
 </svg>
