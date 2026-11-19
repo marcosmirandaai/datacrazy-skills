@@ -1,0 +1,8 @@
+{
+  "name": "datacrazy-api",
+  "version": "1.0.0",
+  "description": "Consumir a API REST e o MCP do CRM Datacrazy sem estourar limite e sem perder registro.",
+  "author": {
+    "name": "Marcos Miranda"
+  }
+}

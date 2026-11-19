@@ -1,0 +1,62 @@
+# Gerado pelo repositório de trabalho (privado). Toda hora lê as skills de lá, higieniza, publica aqui e,
+# quando alguma skill mudou, cria uma Release com os .zip para o claude.ai.
+name: Publicar skills
+
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-skills
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Este repositório
+        uses: actions/checkout@v4
+        with:
+          path: publico
+
+      - name: Repositório de trabalho (só leitura, só as skills públicas)
+        uses: actions/checkout@v4
+        with:
+          repository: marcosmirandaai/automacoes-datacrazy
+          ssh-key: ${{ secrets.PRIVADO_DEPLOY_KEY }}
+          path: privado
+          sparse-checkout: |
+            publicacao
+            .claude/skills/datacrazy-automacoes
+            .claude/skills/datacrazy-api
+            .claude/skills/datacrazy-dashboards
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Higienizar e montar
+        run: node privado/publicacao/publicar.js --saida publico --zips zips
+
+      - name: Publicar
+        working-directory: publico
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Nada mudou."; exit 0; fi
+          git commit -m "Publicação automática: $(tr '\n' ' ' < ../zips/mudou.txt)"
+          git push
+
+      - name: Release com os .zip
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -s zips/mudou.txt ]; then echo "Nenhuma skill mudou."; exit 0; fi
+          tag="v$(date -u +%Y.%m.%d-%H%M)"
+          gh release create "$tag" zips/*.zip --repo "$GITHUB_REPOSITORY" --title "$tag" --notes-file zips/mudou.txt

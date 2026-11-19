@@ -1,0 +1,25 @@
+{
+  "name": "datacrazy-skills",
+  "owner": {
+    "name": "Marcos Miranda",
+    "url": "https://github.com/marcosmirandaai"
+  },
+  "description": "Skills para construir automações, consumir a API e montar painéis no CRM Datacrazy.",
+  "plugins": [
+    {
+      "name": "datacrazy-automacoes",
+      "source": "./plugins/datacrazy-automacoes",
+      "description": "Construir, revisar e depurar automações (fluxos) do CRM Datacrazy, com validador de JSON e organizador de layout."
+    },
+    {
+      "name": "datacrazy-api",
+      "source": "./plugins/datacrazy-api",
+      "description": "Consumir a API REST e o MCP do CRM Datacrazy sem estourar limite e sem perder registro."
+    },
+    {
+      "name": "datacrazy-dashboards",
+      "source": "./plugins/datacrazy-dashboards",
+      "description": "Montar painéis e relatórios sobre os dados do CRM Datacrazy: de onde vem cada número, medição e operação."
+    }
+  ]
+}
