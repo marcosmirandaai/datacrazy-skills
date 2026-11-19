@@ -2,11 +2,11 @@
 
 Três skills para o Claude trabalhar com o [CRM Datacrazy](https://crm.datacrazy.io), escritas a partir de automações, integrações e painéis em produção:
 
-| Skill | Para que serve |
-|---|---|
-| `datacrazy-automacoes` | Construir, revisar e depurar automações (fluxos): todos os blocos e gatilhos, variáveis, JSON de importação, validador e organizador de layout. |
-| `datacrazy-api` | Consumir a API REST e o MCP do Datacrazy sem estourar limite, sem perder registro na paginação e sem gastar requisição à toa. |
-| `datacrazy-dashboards` | Montar painéis e relatórios sobre os dados do CRM: de onde vem cada número, como medir disparo, atendimento e venda, e como operar a ingestão. |
+| | Skill | Para que serve |
+|---|---|---|
+| <img src="plugins/datacrazy-automacoes/logo.svg" width="56" alt=""> | `datacrazy-automacoes` | Construir, revisar e depurar automações (fluxos): todos os blocos e gatilhos, variáveis, JSON de importação, validador e organizador de layout. |
+| <img src="plugins/datacrazy-api/logo.svg" width="56" alt=""> | `datacrazy-api` | Consumir a API REST e o MCP do Datacrazy sem estourar limite, sem perder registro na paginação e sem gastar requisição à toa. |
+| <img src="plugins/datacrazy-dashboards/logo.svg" width="56" alt=""> | `datacrazy-dashboards` | Montar painéis e relatórios sobre os dados do CRM: de onde vem cada número, como medir disparo, atendimento e venda, e como operar a ingestão. |
 
 ## Instalar no Claude Code (com atualização automática)
 

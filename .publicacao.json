@@ -1,14 +1,14 @@
 {
   "datacrazy-automacoes": {
-    "versao": "1.0.0",
-    "hash": "3a738e11cfa0aa09"
+    "versao": "1.0.1",
+    "hash": "251a29031c83e438"
   },
   "datacrazy-api": {
-    "versao": "1.0.0",
-    "hash": "cbce656406cb5d76"
+    "versao": "1.0.1",
+    "hash": "aeb21e99c33ccd40"
   },
   "datacrazy-dashboards": {
-    "versao": "1.0.0",
-    "hash": "853332ab963dc5a4"
+    "versao": "1.0.1",
+    "hash": "952bc788e7f93257"
   }
 }

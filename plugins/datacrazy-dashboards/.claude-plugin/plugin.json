@@ -1,8 +1,9 @@
 {
   "name": "datacrazy-dashboards",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Montar painéis e relatórios sobre os dados do CRM Datacrazy: de onde vem cada número, medição e operação.",
   "author": {
     "name": "Marcos Miranda"
-  }
+  },
+  "icon": "./logo.png"
 }
